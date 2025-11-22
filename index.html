@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet'>
+
     <style>
+
+        html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        }
+
+
         nav{
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-        nav {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
         }
+        
 
         nav ul {
             display: flex;
@@ -35,36 +43,44 @@
             padding: 30px 50px 30px 0;
             list-style-type: none;
             cursor: pointer;
+            color: white;   
         }
 
-        .hometext {
-            
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            padding-top: 7%;
-            
-        }
+        
+        
 
-        h1 {
+        .mid-text h1 {
             color: #FFF;
             font-family: Montserrat;
-            font-size: 70px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-
-        h3 {
-            width: 125px;
-            height: 23px;
-            flex-shrink: 0;
-            color: #FFF;
-            font-family: Inter;
-            font-size: 16px;
+            font-size: 150px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            margin-bottom: 0px;
+        
+
+            
+        }
+
+        .mid-text h3 {
+            flex-shrink: 0;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+            color: #FFF;
+            font-family: "Dancing Script";
+            font-size: 128px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: -20px;
+        
+
+
         }
 
 
@@ -96,7 +112,7 @@
             text-align: center;
             justify-content: center;
             align-items: center;
-            padding-top: 20%;
+            padding-top: 4%;
         }
     </style>
 
@@ -105,6 +121,7 @@
 <body>
     <div>
         <nav>
+            <img src="pics/Logo.png" alt="Logo">
             <ul>
                 <li>Home</li>
                 <li>About Us</li>
@@ -114,21 +131,19 @@
             </ul>
         </nav>
     </div>
-    <div class="hometext">
-        <h1>
-            DISCOVER
-        </h1>
-        <h3>
-            the world
-        </h3>
-    </div>
-    <div>   
     <div class="mid-text">
         <h1>DISCOVER</h1>
-        <h2>the world</h2>
+        <h3>the world</h3>
     </div>
+
     <div>
         <h3 class="btn1">Explore Now</h3>
+    </div>
+
+    <div class="container">
+        <div>
+
+        </div>
     </div>
 </body>
 
