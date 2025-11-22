@@ -10,12 +10,22 @@
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet'>
 
     <style>
+
+        html, body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+        }
+
+
         nav{
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
         }
+        
 
         nav ul {
             display: flex;
@@ -33,7 +43,11 @@
             padding: 30px 50px 30px 0;
             list-style-type: none;
             cursor: pointer;
+            color: white;   
         }
+
+        
+        
 
         .mid-text h1 {
             color: #FFF;
@@ -42,6 +56,10 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            margin-bottom: 0px;
+        
+
+            
         }
 
         .mid-text h3 {
@@ -59,6 +77,10 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            margin-top: -20px;
+        
+
+
         }
 
 
@@ -90,34 +112,7 @@
             text-align: center;
             justify-content: center;
             align-items: center;
-            padding-top: 17%;
-        }
-
-
-
-        .toolbar{
-            display: flex;
-            width: 1082px;
-            height: 104px;
-            flex-shrink: 0;
-            border-radius: 100px 100px 0 0;
-            background: #FFF;
-            align-self: center;
-            align-content: center;
-            justify-content: center;
-            padding-left: 30px;
-        }
-        
-        .hotel {
-            display: flex;
-            align-items: center;
-            text-align: center;
-        }
-
-        .hotel img{
-            width: 35px;
-            height: 35px;
-            flex-shrink: 0;
+            padding-top: 4%;
         }
     </style>
 
@@ -126,6 +121,7 @@
 <body>
     <div>
         <nav>
+            <img src="pics/Logo.png" alt="Logo">
             <ul>
                 <li>Home</li>
                 <li>About Us</li>
