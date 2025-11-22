@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet'>
+
     <style>
         nav{
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-        nav {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
         }
 
         nav ul {
@@ -37,31 +35,27 @@
             cursor: pointer;
         }
 
-        .hometext {
-            
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            padding-top: 7%;
-            
-        }
-
-        h1 {
+        .mid-text h1 {
             color: #FFF;
             font-family: Montserrat;
-            font-size: 70px;
+            font-size: 150px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 700;
             line-height: normal;
         }
 
-        h3 {
-            width: 125px;
-            height: 23px;
+        .mid-text h3 {
             flex-shrink: 0;
             color: #FFF;
             font-family: Inter;
-            font-size: 16px;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align: center;
+            color: #FFF;
+            font-family: "Dancing Script";
+            font-size: 128px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -96,7 +90,34 @@
             text-align: center;
             justify-content: center;
             align-items: center;
-            padding-top: 20%;
+            padding-top: 17%;
+        }
+
+
+
+        .toolbar{
+            display: flex;
+            width: 1082px;
+            height: 104px;
+            flex-shrink: 0;
+            border-radius: 100px 100px 0 0;
+            background: #FFF;
+            align-self: center;
+            align-content: center;
+            justify-content: center;
+            padding-left: 30px;
+        }
+        
+        .hotel {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hotel img{
+            width: 35px;
+            height: 35px;
+            flex-shrink: 0;
         }
     </style>
 
@@ -114,21 +135,31 @@
             </ul>
         </nav>
     </div>
-    <div class="hometext">
-        <h1>
-            DISCOVER
-        </h1>
-        <h3>
-            the world
-        </h3>
-    </div>
-    <div>   
+ 
     <div class="mid-text">
         <h1>DISCOVER</h1>
-        <h2>the world</h2>
+        <h3>the world</h3>
     </div>
+
     <div>
         <h3 class="btn1">Explore Now</h3>
+    </div>
+
+    <div class="toolbar">
+        <div class="hotel">
+            <img src="pics/hotel.svg" alt="Hotel Logo">
+            <h6>HOTEL</h6>
+            <img src="pics/tabler_car.svg" alt="Car">
+            <h6>CAR RENTALS</h6>
+            <img src="pics/Plane.svg" alt="Plane">
+            <h6>FLIGHTS</h6>
+            <img src="pics/island.svg" alt="Island">
+            <h6>TRIPS</h6>
+            <img src="pics/ship.svg" alt="Ship">
+            <h6>CRUISES</h6>
+            <img src="pics/snorkle.svg" alt="Snorkle">
+            <h6>ACTIVITIES</h6>
+        </div>
     </div>
 </body>
 
