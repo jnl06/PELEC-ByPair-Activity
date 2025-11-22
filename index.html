@@ -7,156 +7,193 @@
     <title>Document</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
     <style>
 
-        html, body {
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        height: 100%;
+        body {
+            margin: 0;
+            background: 
+                linear-gradient(rgba(88, 42, 168, 0.4), rgba(88, 42, 168, 0.4)),
+                url('pics/Bg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
+        
 
-        nav{
+        nav {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
+            z-index: 10;
         }
-        
 
         nav ul {
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            width: 100%;
             height: 100px;
-            background: rgba(65, 5, 168, 0.41);
             margin: 0;
-            padding: 0;
+            padding: 0 40px;
             list-style: none;
+            background: rgba(65, 5, 168, 0.41);
         }
 
         nav li {
-            padding: 30px 50px 30px 0;
-            list-style-type: none;
+            padding: 0 25px;
+            color: white;
             cursor: pointer;
-            color: white;   
         }
 
-        
-        
+        nav li:hover{
+            color:#FF9900;
+        }
 
-        .mid-text h1 {
+        .logo{
+            display: flex;
+            padding: 0px;
+        }
+
+        .logo h2{
+            justify-content: center;
+            align-content: center;
             color: #FFF;
             font-family: Montserrat;
-            font-size: 150px;
+            font-size: 28px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 800;
             line-height: normal;
-            margin-bottom: 0px;
-        
+            padding-right: 300px;
+        }
 
-            
+        .mid-text {
+            text-align: center;
+            padding-top: 130px;
+        }
+
+        .mid-text h1 {
+            font-family: Montserrat;
+            font-size: 120px;
+            font-weight: 700;
+            color: #FFF;
+            margin: 0;
         }
 
         .mid-text h3 {
-            flex-shrink: 0;
-            color: #FFF;
-            font-family: Inter;
-            font-size: 60px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            text-align: center;
-            color: #FFF;
             font-family: "Dancing Script";
-            font-size: 128px;
-            font-style: normal;
+            font-size: 108px;
             font-weight: 700;
-            line-height: normal;
+            color: #FFF;
             margin-top: -20px;
-        
-
-
         }
 
+        .btn-cont {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 80px;
+        }
 
         .btn1 {
             width: 250px;
             height: 68px;
             border-radius: 100px;
-            background: linear-gradient(90deg, #FF9900 0%, #9B2CFF 100%);
-            text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
+            background: linear-gradient(90deg, #FF9900 0%, #9B2CFF 100%);
             color: white;
-            font-family: Arial, sans-serif;
+            font-weight: bold;
             cursor: pointer;
-            margin: 40px auto;
-            z-index: 1;
         }
 
-        body {
-            background-image: url('pics/Bg.png');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100%;
+        .btn1:hover{
+            background: linear-gradient(90deg,  #9B2CFF  0%, #FF9900 100%);
         }
 
+        .toolbar {
+            width: 982px;
+            height: 82.5px;
+            background: #FFF;
+            border-radius: 100px 100px 0 0;
+            margin: 0 auto;
+        }
 
-        .mid-text{
-            text-align: center;
-            justify-content: center;
+        .hotel {
+            display: flex;
             align-items: center;
-            padding-top: 4%;
+            justify-content: center;
+            height: 100%;
         }
+
+        .hotel  img {
+            width: 30px;
+            height: 30px;
+            flex-shrink: 0;
+            padding-left: 30px;
+        }
+
+        .hotel h6 {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 400;
+            padding-left: 15px;
+        }
+
     </style>
 
 </head>
 
 <body>
-    <div>
-        <nav>
-            <img src="pics/Logo.png" alt="Logo">
-            <ul>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Offers</li>
-                <li>News</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </div>
- 
+
+    <nav>
+        <ul>
+            <div class="logo">
+                <li><img src="pics/Logo.png" alt="Logo"></li>
+                <h2>WANDERGO</h2>
+            </div>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Offers</li>
+            <li>News</li>
+            <li>Contact</li>
+            <li><img src="pics/Search.svg" alt="Search"></li>
+        </ul>
+    </nav>
+
     <div class="mid-text">
         <h1>DISCOVER</h1>
         <h3>the world</h3>
     </div>
 
-    <div>
-        <h3 class="btn1">Explore Now</h3>
+    <div class="btn-cont">
+        <div class="btn1">Explore Now</div>
     </div>
 
     <div class="toolbar">
         <div class="hotel">
             <img src="pics/hotel.svg" alt="Hotel Logo">
             <h6>HOTEL</h6>
+
             <img src="pics/tabler_car.svg" alt="Car">
             <h6>CAR RENTALS</h6>
+
             <img src="pics/Plane.svg" alt="Plane">
             <h6>FLIGHTS</h6>
+
             <img src="pics/island.svg" alt="Island">
             <h6>TRIPS</h6>
+
             <img src="pics/ship.svg" alt="Ship">
             <h6>CRUISES</h6>
+
             <img src="pics/snorkle.svg" alt="Snorkle">
             <h6>ACTIVITIES</h6>
         </div>
     </div>
+
 </body>
 
 </html>
